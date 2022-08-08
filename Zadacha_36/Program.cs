@@ -4,7 +4,7 @@
 [-4, -6, 89, 6] -> 0
 */
 
-System.Console.Write("Введите размер массива: ");
+Console.Write("Введите размер массива: ");
 int sizeArr = int.Parse(Console.ReadLine());
 
 int[] GetArr(int sizeArr)
@@ -23,9 +23,9 @@ void PrintArray(int[] arr)
 {
     for (int i = 0; arr.Length > i; i++)
     {
-        System.Console.Write(arr[i] + " ");
+        Console.Write(arr[i] + " ");
     }
-    System.Console.WriteLine();
+    Console.WriteLine();
     return;
 }
 
@@ -39,4 +39,4 @@ for (int i = 1; sizeArr > i; i += 2)
 {
     sum = array[i] + sum;
 }
-System.Console.Write("Сумма элементов, стоящих на нечётных позициях равна: " + sum);
+Console.Write("Сумма элементов, стоящих на нечётных позициях равна: " + sum);
