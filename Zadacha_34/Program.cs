@@ -18,7 +18,7 @@ int[] GetArr(int sizeArr)
     return arr;
 }
 
-int counter = 0;
+int count = 0;
 
 int[] array = GetArr(sizeArr);
 
@@ -27,9 +27,9 @@ for (int i = 0; sizeArr > i; i++)
 {
     if (array[i] % 2 == 0)
     {
-        counter++;
+        count++;
     }
-     System.Console.Write(array[i] + " ");
+    Console.Write(array[i] + " ");
 }
 Console.WriteLine();
-System.Console.WriteLine("Количестов четных чисел: " + counter);
+Console.WriteLine("Количестов четных чисел: " + count);
